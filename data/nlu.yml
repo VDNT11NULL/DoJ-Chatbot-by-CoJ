@@ -1,0 +1,79 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - good morning
+      - hey
+      - what's up
+      - good day
+
+  - intent: ask_divisions
+    examples: |
+      - How many divisions are there in the Department of Justice?
+      - Tell me about the divisions of DoJ
+      - What are the divisions under the DoJ?
+
+  - intent: ask_judges
+    examples: |
+      - How many judges are in the Supreme Court?
+      - Number of judges in Supreme Court
+      - How many judges are appointed currently?
+
+  - intent: ask_fine_procedure
+    examples: |
+      - How can I pay my court fine?
+      - What is the procedure to pay a traffic fine?
+      - Steps to pay fines online
+
+  - intent: ask_pendency
+    examples: |
+      - How do I check pending cases?
+      - Where can I see the pendency of cases?
+      - How can I check case pendency?
+
+  - intent: ask_live_streaming
+    examples: |
+      - Can I watch court proceedings online?
+      - How can I live stream the hearings?
+      - Where to watch live court cases?
+
+  - intent: ask_efiling
+    examples: |
+      - How to file a case online?
+      - What is the process for eFiling?
+      - How can I file a case digitally?
+
+  - intent: ask_fast_track
+    examples: |
+      - What are fast track courts?
+      - How do fast track courts work?
+      - Can you tell me about fast track cases?
+
+  - intent: ask_app_download
+    examples: |
+      - Where can I download the eCourts app?
+      - How to get the eCourts mobile app?
+      - How do I download the eCourts app?
+
+  - intent: ask_tele_law
+    examples: |
+      - How can I access Tele-Law services?
+      - Where can I use Tele-Law services?
+      - What is Tele-Law and how can I use it?
+
+  - intent: ask_case_status
+    examples: |
+      - How do I check my case status?
+      - What is the status of my case?
+      - How to track my case?
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you
+      - talk to you later
+

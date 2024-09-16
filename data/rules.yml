@@ -1,0 +1,63 @@
+version: "3.1"
+
+rules:  
+  - rule: greet the user    
+    steps:      
+    - intent: greet      
+    - action: utter_greet  
+  
+  - rule: say goodbye    
+    steps:      
+    - intent: goodbye      
+    - action: utter_goodbye  
+
+  - rule: ask about divisions    
+    steps:      
+    - intent: ask_divisions      
+    - action: utter_ask_divisions  
+    
+  - rule: ask about judges    
+    steps:      
+    - intent: ask_judges      
+    - action: utter_ask_judges
+  
+  - rule: ask about fine procedure
+    steps:
+      - intent: ask_fine_procedure
+      - action: utter_ask_fine_procedure
+
+  - rule: ask about pendency
+    steps:
+      - intent: ask_pendency
+      - action: utter_ask_pendency
+
+  - rule: ask about live streaming
+    steps:
+      - intent: ask_live_streaming
+      - action: utter_ask_live_streaming
+
+  - rule: ask about eFiling
+    steps:
+      - intent: ask_efiling
+      - action: utter_ask_efiling
+
+  - rule: ask about fast track
+    steps:
+      - intent: ask_fast_track
+      - action: utter_ask_fast_track
+
+  - rule: ask about app download
+    steps:
+      - intent: ask_app_download
+      - action: utter_ask_app_download
+
+  - rule: ask about tele law
+    steps:
+      - intent: ask_tele_law
+      - action: utter_ask_tele_law
+
+  - rule: ask about case status
+    steps:
+      - intent: ask_case_status
+      - action: utter_ask_case_status
+

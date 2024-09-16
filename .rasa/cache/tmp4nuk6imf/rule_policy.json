@@ -1,0 +1,38 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_app_download\"}}]": "utter_ask_app_download",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_app_download\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_app_download\"}, \"user\": {\"intent\": \"ask_app_download\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_case_status\"}}]": "utter_ask_case_status",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_case_status\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_case_status\"}, \"user\": {\"intent\": \"ask_case_status\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_live_streaming\"}}]": "utter_ask_live_streaming",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_live_streaming\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_live_streaming\"}, \"user\": {\"intent\": \"ask_live_streaming\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_pendency\"}}]": "utter_ask_pendency",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_pendency\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_pendency\"}, \"user\": {\"intent\": \"ask_pendency\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_divisions\"}}]": "utter_ask_divisions",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_divisions\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_divisions\"}, \"user\": {\"intent\": \"ask_divisions\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_efiling\"}}]": "utter_ask_efiling",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_efiling\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_efiling\"}, \"user\": {\"intent\": \"ask_efiling\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_judges\"}}]": "utter_ask_judges",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_judges\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_judges\"}, \"user\": {\"intent\": \"ask_judges\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_fine_procedure\"}}]": "utter_ask_fine_procedure",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_fine_procedure\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_fine_procedure\"}, \"user\": {\"intent\": \"ask_fine_procedure\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_tele_law\"}}]": "utter_ask_tele_law",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_tele_law\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_tele_law\"}, \"user\": {\"intent\": \"ask_tele_law\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_fast_track\"}}]": "utter_ask_fast_track",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_fast_track\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_fast_track\"}, \"user\": {\"intent\": \"ask_fast_track\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

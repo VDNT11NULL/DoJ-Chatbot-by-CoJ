@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+  - story: greet and ask question
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: ask about divisions
+    steps:
+      - intent: ask_divisions
+      - action: utter_ask_divisions
+
+  - story: ask about judges
+    steps:
+      - intent: ask_judges
+      - action: utter_ask_judges
+
+  - story: ask about fine procedure
+    steps:
+      - intent: ask_fine_procedure
+      - action: utter_ask_fine_procedure
+
+  - story: ask about pendency
+    steps:
+      - intent: ask_pendency
+      - action: utter_ask_pendency
+
+  - story: ask about live streaming
+    steps:
+      - intent: ask_live_streaming
+      - action: utter_ask_live_streaming
+
+  - story: ask about eFiling
+    steps:
+      - intent: ask_efiling
+      - action: utter_ask_efiling
+
+  - story: ask about fast track
+    steps:
+      - intent: ask_fast_track
+      - action: utter_ask_fast_track
+
+  - story: ask about app download
+    steps:
+      - intent: ask_app_download
+      - action: utter_ask_app_download
+
+  - story: ask about tele law
+    steps:
+      - intent: ask_tele_law
+      - action: utter_ask_tele_law
+
+  - story: ask about case status
+    steps:
+      - intent: ask_case_status
+      - action: utter_ask_case_status
+
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+

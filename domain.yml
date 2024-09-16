@@ -1,0 +1,124 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_divisions
+  - ask_judges
+  - ask_pendency
+  - ask_fine_procedure
+  - ask_live_streaming
+  - ask_pending_supreme_cases
+  - ask_efiling
+  - ask_fast_track
+  - ask_app_download
+  - ask_tele_law
+  - ask_case_status
+  - goodbye
+
+entities:
+  - court
+  - judges
+
+slots:
+  court:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: court
+
+responses:
+  utter_iamabot:
+    - text: "I am a bot created by the Department of Justice to assist you with legal queries and services."
+
+  utter_greet:
+    - text: "Hello! Welcome to the Department of Justice chatbot. How may I assist you today?"
+
+  utter_ask_divisions:
+    - text: |
+        The Department of Justice oversees the following divisions:
+        1. **Judicial Appointments** - Handling the appointment of judges to various courts.
+        2. **Legal Affairs** - Managing legal policies and legislative matters.
+        3. **Justice Services** - Providing citizens with judicial services and resources.
+
+  utter_ask_judges:
+    - text: "As of now, the Supreme Court has 34 judges, including the Chief Justice of India."
+
+  utter_ask_fine_procedure:
+    - text: |
+        To pay fines for traffic violations or court-related payments, follow these steps:
+
+        1. **Go to the eCourts Services Portal**: Visit the official payment portal at [https://pay.ecourts.gov.in](https://pay.ecourts.gov.in).
+        2. **Select Payment Type**:
+            - Choose between *Court Fee*, *Judicial Deposit*, *Fine*, *Penalty*, or *Others* based on the purpose of your payment.
+        3. **Choose Court Type**: 
+            - Select *District Court* or *High Court* depending on where your case is being processed.
+        4. **Enter Case Details**: 
+            - Provide relevant information such as *State*, *District*, *Party Name*, and the required *Amount* for the payment.
+        5. **Complete Payment**: 
+            - Proceed with the payment and save the transaction reference for future use.
+
+        **Note**: Keep your transaction reference number for future queries or disputes.
+
+  utter_ask_pendency:
+    - text: |
+        To view the pendency of cases, visit the **National Judicial Data Grid (NJDG)** at [https://njdg.ecourts.gov.in/scnjdg](https://njdg.ecourts.gov.in/scnjdg). 
+        You can filter cases by **State**, **District**, **Court Establishment**, and **Case Type**.
+
+  utter_ask_live_streaming:
+    - text: |
+        You can access live streaming of ongoing court proceedings on the **Supreme Court's official website**. The service is available for selected cases and hearings.
+
+  utter_ask_efiling:
+    - text: |
+        To use the eFiling system for filing cases online:
+        1. Register on the [eFiling website](https://efiling.ecourts.gov.in).
+        2. Choose the court where you want to file your case.
+        3. Fill in the required case details and attach necessary documents.
+        4. Submit and track your case through the portal.
+
+  utter_ask_fast_track:
+    - text: |
+        Fast Track Courts (FTCs) are established to expedite certain cases, including cases of sexual assault, crimes against women and children, and senior citizen-related cases. 
+        FTCs aim to resolve cases faster than regular courts, ensuring timely justice.
+
+  utter_ask_app_download:
+    - text: |
+        You can download the **eCourts Services Mobile App** from the Google Play Store or Apple App Store.
+        - Track your case status.
+        - Access court orders and judgments.
+        - View cause lists and other legal information.
+
+  utter_ask_tele_law:
+    - text: |
+        **Tele-Law** services provide free legal advice to citizens through the Common Service Centers (CSCs). To avail of these services:
+        1. Visit your nearest CSC.
+        2. Book an appointment with a lawyer through the Tele-Law portal.
+        3. Consult with legal experts through video conferencing.
+
+  utter_ask_case_status:
+    - text: |
+        To check the status of your case, visit the [eCourts portal](https://ecourts.gov.in).
+        1. Enter the **Case Number**, **Party Name**, or **Filing Number**.
+        2. Choose the relevant court (District Court or High Court).
+        3. Review the case details, next hearing date, and other updates.
+
+  utter_goodbye:
+    - text: "Thank you for using the Department of Justice chatbot! Goodbye and have a great day!"
+  
+  utter_default:
+  - text: "Sorry, I didn't understand that. Could you please rephrase?"
+
+actions:
+  - action_default_fallback
+
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+  - name: RulePolicy
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
