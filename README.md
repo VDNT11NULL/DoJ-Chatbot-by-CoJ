@@ -15,4 +15,3 @@ SIH-DoJ-Chatbot-by-CoJ/
 │   └── test_stories.yml
 └── requirements.txt          # Python dependencies
 ```
-Llama3 finetuning alongwith RAG + PEFT
