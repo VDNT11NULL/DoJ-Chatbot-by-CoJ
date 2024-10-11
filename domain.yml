@@ -58,7 +58,7 @@ responses:
         5. **Complete Payment**: 
             - Proceed with the payment and save the transaction reference for future use.
 
-        **Note**: Keep your transaction reference number for future queries or disputes.
+        **Note**: It is recommended to keep your transaction reference number for future queries or disputes.
 
   utter_ask_pendency:
     - text: |
